@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company FAQ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="bg-anim"></div>
+  <main class="wrap">
+    <header class="head">
+      <h1>Frequently Asked Questions</h1>
+      <p class="sub">Clear answers to the most common questions.</p>
+      <div class="toolbar">
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <input id="q" type="text" placeholder="Search questions..."/>
+        </div>
+        <div class="actions">
+          <button id="expandAll" class="btn"><i class="fas fa-plus-circle"></i> Expand All</button>
+          <button id="collapseAll" class="btn ghost"><i class="fas fa-minus-circle"></i> Collapse All</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="faq-container" id="faqs">
+      <article class="faq" tabindex="0" aria-expanded="true">
+        <h3 class="faq-title">What is your pricing model?</h3>
+        <div class="faq-panel">
+          <p>We offer tiered monthly and annual plans. Annual subscriptions include a discount. Custom enterprise pricing is available for larger teams or additional compliance needs.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">Do you provide a free trial?</h3>
+        <div class="faq-panel">
+          <p>Yes. New accounts receive a 14-day free trial with full access to core features. No credit card is required to start.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">How do invoices and billing work?</h3>
+        <div class="faq-panel">
+          <p>We support credit card and bank transfer for eligible plans. Invoices are generated automatically and can be downloaded from the billing portal. VAT details can be added to your company profile.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">Can we cancel anytime? What is your refund policy?</h3>
+        <div class="faq-panel">
+          <p>You can cancel at any time from the admin panel. Plans remain active until the end of the billing cycle. We offer prorated refunds for annual plans within 30 days of purchase.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">How do you secure our data?</h3>
+        <div class="faq-panel">
+          <p>Data is encrypted in transit (TLS 1.2+) and at rest (AES-256). Access is role-based with audit logs. We run regular penetration tests and continuous vulnerability scanning.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">Are you compliant with GDPR and SOC 2?</h3>
+        <div class="faq-panel">
+          <p>Yes. We are GDPR-aligned and maintain SOC 2 Type II controls. Data Processing Agreements (DPA) and Sub-processor lists are available upon request.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">What uptime do you guarantee? Do you offer an SLA?</h3>
+        <div class="faq-panel">
+          <p>We target 99.9% uptime. Enterprise plans include a formal SLA with response and resolution targets, plus priority support channels.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">Do you have SSO and role-based access control?</h3>
+        <div class="faq-panel">
+          <p>Yes. We support SSO via SAML/OIDC and granular RBAC with predefined roles and custom permissions for teams and projects.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">Is there an API and what integrations are available?</h3>
+        <div class="faq-panel">
+          <p>We provide a REST API and webhooks. Native integrations include Slack, Microsoft Teams, GitHub, GitLab, Jira, and Zapier. Enterprise customers can request custom connectors.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">How do you handle backups and disaster recovery?</h3>
+        <div class="faq-panel">
+          <p>Automated encrypted backups run multiple times per day with multi-region redundancy. We regularly test restore procedures to meet RPO/RTO objectives.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">Can we export or delete our data?</h3>
+        <div class="faq-panel">
+          <p>Yes. Admins can export data in open formats via the product or API. Upon contract termination, data can be deleted on request following our retention policy.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">What onboarding and support do you provide?</h3>
+        <div class="faq-panel">
+          <p>All plans include help center, email support, and product tours. Business/Enterprise add live training, dedicated success, and migration assistance.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+
+      <article class="faq" tabindex="0" aria-expanded="false">
+        <h3 class="faq-title">What are your support hours and response times?</h3>
+        <div class="faq-panel">
+          <p>Standard support is 9:00–18:00 (GMT+3) on business days. Priority and 24/7 options are included in Enterprise SLAs with defined response targets by severity.</p>
+        </div>
+        <button class="faq-toggle" aria-label="toggle">
+          <i class="fas fa-chevron-down"></i><i class="fas fa-times"></i>
+        </button>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
